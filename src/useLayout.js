@@ -17,7 +17,7 @@ export default function useLayout(){
     }
     useEffect(() => {
         function widthHandler(){
-            setColumns(calculateColumns(window.screen.width));
+            setColumns(calculateColumns(window.innerWidth));
         }
         window.addEventListener("resize", widthHandler);
         widthHandler();
